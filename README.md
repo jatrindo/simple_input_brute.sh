@@ -16,6 +16,6 @@ Each individual results file is formatted `sb_res_${process_num}_${startword}_${
 # Limitations:
 To "cancel" the current session, you'll need to find and kill the guessing `simple_input_brute.sh` processes yourself -- happy hunting! 😁
 
-One (quick, not always accurate, YMMV) way to do this is via the command `pgrep -a 'simple_' | grep '<target_program>' | awk '{print $1}' | xargs -I{} kill {}`
+One (quick, not always accurate, YMMV) way to do this is via the command `pgrep -a 'xargs' | grep '<target_program>' | awk '{print $1}' | xargs -I{} kill {}`
 
 The script also assumes the presence of certain tools on the system, such as `awk`, `nproc`, `xargs`, and `sed`.  
