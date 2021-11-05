@@ -4,7 +4,7 @@ Short bash script that spawns multiple processes (numCPU + 1) to feed a target p
 Lines from the wordlist are split evenly amongst each process, and the program inputs and corresponding outputs are logged to a separate directory for post-session analysis.
 
 # Usage:
-`./simple_input_brute.sh <wordlist> <program_which_reads_stdin>`
+`./simple_input_brute.sh <wordlist> <./program_which_reads_stdin>`
 
 # Effects:
 A results directory containing each process's inputs and outputs is created in the current directory.

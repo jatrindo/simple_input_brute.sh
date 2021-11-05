@@ -7,7 +7,7 @@ function err_exit() {
 }
 
 if [ $# -ne 2 ]; then
-	echo "$(basename $0) <wordlist> <program_which_reads_stdin>"
+	echo "$(basename $0) <wordlist> <./program_which_reads_stdin>"
 	exit 1
 fi
 
